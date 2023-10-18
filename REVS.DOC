@@ -1,0 +1,220 @@
+*****************************************************************************
+
+
+NBA JAM Revision Information - 2/10/93
+Mark Turmell - Ext. 485
+
+Prototype games:
+
+1.	250 protoype games were manufactured with PROTO 1.00 Image, Program,
+	and Sound EPROMS.
+
+2.	These were both Foreign & Domestic games.
+
+3.	Two serious problems exist in those games:
+
+	- When the game reaches halftime, video clips are decompressed
+	  out of image ROM and from program ROM.  Approximately 1 out of a
+	  100 games these clips decompress improperly and cause the game to
+	  reset back into the powerup sequence (Attract mode).
+
+	- Our second problem is that the game will go silent during game
+	  play and usually recover at the start of the next period.  This
+	  occurs approximately 1 out of 50 games (Once a day).  Management
+	  was aware of this problem and felt that recovering the sounds
+	  at the start of the next period was acceptable.
+
+
+
+*****************************************************************************
+
+
+Revision 1.00 games:
+
+
+This was a complete EPROM change.  16 Image EPROMS, 3 Sound EPROMS, 2 Program
+EPROMS.  The prototype Program EPROMS were 2 meg parts.  The Rev 1.00 Program
+EPROMS are 4 meg parts.
+
+John Mcaffer was provided a list of all the checksums for all Rev 1.00 parts.
+
+Changes from Prototype games to Rev 1.00 games:
+
+	- Video clip crash bug at halftime fixed.
+
+	- Cheerleaders added.
+
+	- Game play tweaks.
+
+
+1.	x Rev 1.00 games have shipped.
+
+2.	Two problems exist:
+
+	- The game will still go silent approximately 1 out of 50 games.
+	  The sound department has continued working on the problem.  We
+	  have received some calls from the field about this problem.
+
+	- The menu adjustment "ATTRACT MODE SOUNDS" is not functional.
+	  Telling the game to play music/snds in the attract mode will
+	  not work.  The games remains quiet during attract mode.
+
+
+*****************************************************************************
+
+
+Revision 2.00 games:
+
+
+This requires both Program EPROMS (UJ12 & UG12) and the Sound program (U18).
+Three chips total.
+
+Checksums:
+UJ12 - >b92d
+UG12 - >6dda
+
+
+Changes from Rev 1.00 games to Rev 2.00 games:
+
+	- Sound board going silent problem has been fixed.  Added sound
+	  board hand shaking.
+
+	- Correct copyright/trademark messages installed  (Barbara Norman).
+
+	- Full court shots go in less often.
+
+	- Added attract mode sounds.  The menu adjustment now works correctly.
+
+	- Cleaned up some funky USA pricing modes.  Example:  2 credits to
+	  start, 1 to continue, 4 credits buys full game.
+
+
+
+*****************************************************************************
+
+Memo received from Jonathan Hey regarding updated U3 EPROM - 2/10/93
+
+*****************************************************************************
+
+
+	   TO: 	JOHN MCCAFFER
+	 FROM:	JONATHAN HEY
+	 DATE:  FEBRUARY 10th, 1993
+	   RE:  NBA JAM VIDEO GAME
+	   CC:  MATT BOOTY, MARK TURMELL, WALLY SMOLUCHA
+
+
+      SUBJECT:	SOUND LEVEL TWO (2) CHECKSUMS FOR SOUND ROMS
+		REVISED	ANNOTATION 
+      ------------------------------------------------------
+
+	SOUND LEVEL TWO IS ISSUED FOR THE FOLLOWING REASONS:
+
+	1. Fixed pointer bug in sound event list (which de-queued
+	   oki samples)	
+
+	      This fixes the problem where various speech calls
+	   such as any announcer speech or sound effects such as
+	   dribble(s) or basket sounds WOULD NOT be heard until
+	   the sound board was reset.
+	
+
+	2. Installed hand-shaking (soundcall AA) between video board
+	   and sound board .
+
+		This fixes the problem of background music not being
+	   played during game play.
+	   
+
+	
+	
+	REL2:
+
+ (Tue Feb 09 14:00:20 1993) part: u3.pp  checksum: fc0a 
+ (Fri Jan 29 05:45:48 1993) part: u12.pp  checksum: 304a } (same as SL1)
+ (Fri Jan 29 05:46:29 1993) part: u13.pp  checksum: 9858 } (same as SL1)
+
+
+
+*****************************************************************************
+
+
+Revision 3.01 (4/07/93) games:
+
+
+This consists of both Program EPROMS (UJ12 & UG12).
+
+Checksums:
+UJ12 - >7860
+UG12 - >c3c9
+
+
+Changes from Rev 2.00 games to Rev 3.01 games:
+
+	- The main difference is that this revision will be used in the
+	  NBA JAM kits.  It supports the original 4 players or now just 2.
+	  The operator will decide how to set up his kit.  The remaining
+	  dedicated games that we build will be set to 4 players.
+
+	- Changes the programmer's "back door" entry into the audit pages and
+	  encrypts collection figures which do get displayed in this mode.
+
+	- Fixes the ongoing problem of game resets which occur during the
+	  display of video clips at halftime.  We found no specific bug,
+	  but did implement additional error recovery for reset situations.
+	  When we recover from a reset, it is transparent to the player.
+	
+	- New audits are displayed on the audit pages regarding the reset
+	  problem.  They are:
+
+		- Dogs:  	# of watchdog resets
+		- Process KO:	# of lockups due to software failure
+		- Clip KO:	# of successful recoveries from halftime
+				  clip resets.
+
+	- Fixes an occasional lost coin bug.  Sometimes during the attract
+	  mode and/or gameplay, when a player inserts a coin, it will be
+	  ignored!  We found a bug and fixed it.
+
+	- New CPU drone code which kicks in for the more experienced players
+	  or when the CMOS adjustment for drone difficulty is set higher.
+
+	- Changed CMOS adjustment "Game difficulty" to "Drone difficulty".
+
+	- New CMOS adjustment which turns off all computer assistance.
+	  (Ie.  We try to keep games close, when this adjustment is turned
+	  off, the software will not cheat for the losing team.)
+
+	- New player powerup which turns off all computer assistance for the
+	  next game.
+
+	- New dipswitches:
+	
+		- UJ2 switch 1:  4 player kit/2 player kit - This switch will
+				 turn the game into a 2 player only game for
+				 operators who wish to place the kit into a
+				 2 player cabinet.  Note:  If this switch
+				 gets set to "ON" on a dedicated game, the
+				 game will think it is a two player game with
+				 team #1 using the player 1 set of controls
+				 and team #2 using player 2 set of controls.
+
+		- UJ2 switch 3:  Show video clips/Do not show video clips -
+				 This turns off the displaying of video clips
+				 during halftime.  (Due to their apparent
+				 unreliability)
+
+		- UJ2 switch 7:  This was a request from Lenc Smith which
+				 when set, will skip over the powerup test.
+				 I believe they wanted this so they could
+				 manufacture the game more quickly.  (Though
+				 less reliably!)
+
+		- UJ2 switch 8:	 This TEST switch now works.
+
+
+*****************************************************************************
+
+
+
+

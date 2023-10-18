@@ -1,0 +1,176 @@
+
+11/7/92 - BUGS, TWEAKS & IDEAS WHICH REQUIRE THE SHAWNSTER:
+
+Physics on push flyaways.  They need to choose proper flyback art, possibly
+ no flailing while flying, turn collisions off, float up and skid on butt
+ and get back up faster.  If pushed while shooting, the rules may be
+ different.  Allow offensive players to push, sometimes a turbo pass will
+ also push!  This is cool.
+
+Players sometimes stagger when ball is inbounded to them.
+
+Players can stagger themselves sometimes (after they have been flailed) by
+ pushing their stick.
+
+Goaltending can score 4 points for team if ball goes in hoop.
+
+I saw the shot % numbers on the scrn, but the new crplate2 img was not on!
+
+Ball gets stick in corners, nobody picks it up, everyone flails, ugly.  The
+ ball can also slip off the side edges of the screen.
+
+Elbows must toss players backwards like a push - no fouls called.
+
+When players block a dunk & come down with the ball, they can't dribble.
+
+Implement hook shots, layups, and when we get the referee art, implement
+ the jump ball code.
+
+Players can shoot jumpers from behind backboard & Ball goes through backboard.
+
+We tryed this before and it wasn't smooth, but it would be nice if both
+ side and upper arrows attached to player more accurately.  The Y is not
+ checked at all.  They are fairly smooth now.  Check GND_Y in SCORE.ASM and
+ stktop label also in SCORE.ASM.  Label stktop is the code which handles
+ the arrows on top of the player's heads. 
+
+Implement over and back rule at center court.  I have a hunch that this will
+ have real bad ramifications on gameplay and we may decide not to do it.
+ Is there a rough mockup you can do to test it?  There is also the 10 second
+ rule which is supposed to force the offensive team across center court
+ within the first 10 (Or approx 5 in our case) seconds.
+
+Tweak dribble height at all distances.
+
+Ball is behind player dribbling ball at bottom of screen.
+
+Player legs get clipped at bottom of the screen.  Ugly.
+
+Do you want to further tweak the boundaries for stepping out of bounds?  Both
+ horizontal and vertical edges?
+
+Heads seperate from body at rear of court when jumping.
+ 
+We should figure out where to start/stop 24 second clock.  There are bugs
+ right now that don't start or stop the clock correctly.  I will clean up
+ the KIL1C code.
+
+The screen scroller rules should be analyzed.  The scrn glitches vertically
+ when changing vertical buffering technique.  I will check into that glitch
+ since I messed with it earlier.  But the normal scroller rules should be
+ thought out some more.
+
+We may want to max out the vertical pan when the ball goes up to high.
+
+The rim action is half as cool as it once was.  The ball goes half way
+ into the net before bouncing off the rim.  It doesn't bounce around inside
+ of rim, or bounce high enough above the rim.  The ball still gets stuck
+ between the rim and backboard.  We should tweak this to make it  cool again.  
+
+The in close bank shots could use a higher arc.
+
+Increase the shot % approx 20% or so if team taking shot is losing.
+ This adjustment should not show up on screen.  I bet this will be trasparent
+ to players and keep the games tighter.  perhaps less than 20% on LONG RANGE
+ shots.  If you don't want to make it a blanket increase of 20%, I do think
+ the criteria should be distance not what the % would normally have been.
+ In other words, if a player takes a 10 footer and a defender was totally in
+ his face and the shot % reads 5%, I would still add 20% additional to the
+ shot, however, if a guy takes a full court shot and the % reads 5%, I
+ would only increase the chanve of going in to about 10%.  I don't think
+ players would notice that.
+
+Sometimes a player should fall down on his butt after taking a jump shot.
+ Just for the variety.  Sometimes a jumper will fade backwards also.  I also
+ think sometimes a player should drift in the same direction he was running
+ when he took his jump shot.  This could be a slight drift but I bet it
+ looks pretty cool.
+
+You need to implement different size guys.  Including widths.
+
+Live action sometimes flickers.
+
+You had a good idea about slowing down the offensive team if they are ahead
+ by 10 points.  We should do that.  I don't think players will notice.
+
+Alley-oop shot!  Shoot/Pass at same time passes to top of backboard and
+ causes teamate to leap up and grab ball and drop it through.  If he isn't
+ close enough, ball banks off backboard.  (Possibly all three buttons)
+
+
+FOULS STUFF:
+
+Implement fouls.  This leads to many issues, among them:
+ - We think foul shots should only occur 6-8 times a game.  And it seems
+   that it would be most dramatic if when fouled, the player always makes
+   his shot (Jumper/dunk) which creates a 3 (or even 4) point opportunity.
+   There is so much physical contact in the game that we can call/create
+   fouls almost anytime we want on shots (Jumpers or dunks).
+
+ - We think pushes are cool and have changed our mind on what % of pushes
+   should result in fouls/play stoppage.  We need to implement the chance
+   but we'll have to tweak it.
+
+ - Player taking a jumper who is touched by a defender (Most every play!)
+   should fall backwards onto the ground some small % of the time which
+   creates a foul situation.
+
+ - Sometimes a defender who collides with a dunker should fly backwards
+   with a bunch more velocity, this could be a charge.
+
+ - More...
+
+
+PASSING BUGS/TWEAKS:
+ 
+ - Sometimes a pass hits a defender (Possibly when defender is jumping?) and
+   I think you wanted the ball to bounce away.  Well, it does occassionally,
+   but it does so at the speed of light!
+
+ - Bug where receiver stops to receive a pass even though he has been running
+   in same direction for a long time.
+
+ - Overhead pass is glitchy.  Receiver should not jump as high, pass should
+   be faster, and pass should fly into hands.
+
+ - When receiver of a bullet pass originates off screen, that ball should have
+   a greater chance of attaching to defenders.  But not if defender is close to
+   passer. 
+
+ - Try having pass trigger when button is first pressed.
+
+ - When on offense but not in possession of the ball, and the pass button is
+   pressed, the player stops and rotates toward teamate.  Nothing should
+   happen when this happens, he should keep running.
+
+ - Jump pass is glithcy, ball doesn't seem to originate from the ball carrier.
+   You should slow-mo this to analyze problems.  Some dunks allow you to pass
+   out of them.  What are the rules on this?  Sometimes the art is just to far
+   out of sync (Dunk to jump pass) to allow this.
+
+ - Implement the #3 direction dish off pass.  Player should be running, elevate,
+   and dish off to teamate if he is above or below in a certain arc.
+
+ - Implement bounce pass.
+
+
+DRONES STUFF:
+
+Drones seem to do to many head fakes, they also tend to shoot the ball
+ at the end of the jump shot cycle instead of the peak.
+
+At some point, we should all sit down and talk about drone logic.
+
+
+2/23/93
+
+Stephen Howard head pal
+Howard head on info box
+4 player win bonus
+ACE initials
+Alley oop
+More win streak ram
+Credits stolen
+Put Frank in credits
+
+

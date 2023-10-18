@@ -1,0 +1,56 @@
+Software goals for week ending 8/21
+
+
+1.	Tweak dribble in all directions so ball meets hand.  Also finish
+	tweaking existing shadows.
+
+2.	Make screen tilt up and down to keep ball on screen during
+   	jump shots.
+
+3.	Stop court from scrolling to far left/right on offense and defense.
+
+4. 	Fix jump shot in all directions, adjust secondary ani pnts.
+
+5.	Display preliminary pass artwork and toss ball when pass button
+	is pressed.
+
+6. 	Turn on NBA scoreboard plate and display scores and time remaining.
+	Have game tally scores.
+
+7. 	Turn on shot clock
+
+8. 	Make scoreboard at top of screen work.  Include credits counter.
+	Also turn on game timers for each player.
+
+9. 	Make turbo meters work.
+
+10. 	Consolidate background graphics for extra CPU time.
+
+11.	Free up more CPU time.
+
+12.	Turn on arrows for player #'s when they get lost.
+
+13.	Collide players into each other and bounce off.
+
+14.	Have drone players follow around another player.
+
+15.	Put in defensive shuffles, steal artwork and block shot artwork.
+	Tweak this stuff!  Move in all 8 directions from every angle of
+	artwork.
+
+16.	Prepare dunk artwork for going into game.
+
+17.	Work on rim mechanics.
+
+18.	Make sure we get new backboard/rim footage.
+
+19.	Put in crouch dribble artwork.
+
+20.	Improve pass/receive pass art and code.
+
+21.	Start putting a couple of the dunks into game.
+
+22.	Fix diagnostics screens/page flip/font.
+
+
+

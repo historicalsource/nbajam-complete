@@ -1,0 +1,292 @@
+
+Basketball Game Controls & Moves - 4/29/92
+
+*****************************************************************************
+
+Layout for Controls on Offense:
+
+* STICK    * PASS  * SHOOT/REBOUND
+               * TURBO/FAKE
+
+The 8-way stick will always control the on screen player you have chosen.
+The buttons however will affect the drone player. (Assuming another human is
+not controlling him)
+
+SHOOT/REBOUND Button:
+- If your team has possession (Holding onto it) of the ball then:
+        - Elevates player who has possession of ball.
+        - The computer decides if the ball carrier will take a JUMP SHOT or
+          DRIVE TO THE HOOP (Player would at least have to be moving in the
+          direction of the hoop for this to occur) for a slam dunk. (Or
+          similar signature move, like a spin move into a finger roll)
+        - If a JUMP SHOT then:
+                - Letting go of the button will release the ball.
+                - Letting go of the button at the peak of jump will increase
+                  chances of making the shot.
+                - If someone just tapped the button, the computer will shoot
+                  the ball after a moment or so. (So it will look correct)
+                - If the button is held until jump is almost over, the
+                  computer will shoot the ball automatically at that time.
+        - If a DRIVE TO HOOP then:
+                - Letting go of button as player reaches hoop will increase
+                  chances of making the shot.  (Pretty high to begin with!)
+
+- Hitting PASS button while shooting will:
+        - If in a JUMP SHOT then:
+                - If it isn't to late, player will spin entire body toward
+                  teammate and pass the ball.
+        - If in a DRIVE TO HOOP:
+                - If it isn't to late, and the ball can be easily passed,
+                  (Ex. The teammate is vertically aligned with ball carrier
+                   allowing an easy swing pass) then pass the ball.
+        - If jamming in an ALLEY-OOP pass then:
+                - Do nothing.
+
+- If ball is in the air around hoop, then neither team has possession:
+        - Player you control (not drone) will squat down (box out type look)
+          and leap up for the ball, or push away opposing player.
+
+PASS Button:
+        - If player with ball is running (Dribbling) or standing:
+                - Holding button down will cause player to stop dribbling
+                  and hold the ball above his head.
+                - Pushing joystick will cause that player to spin to the
+                  chosen direction.
+                - Releasing the button will cause the player to spin to the
+                  direction of his teammate and then pass the ball.
+                - The computer will decide if the pass will be a chest pass,
+                  chest bounce pass, or arcing lob type pass.
+        - If teammate is racing toward the hoop then:
+                  (Computer will decide if this will occur.  Based on player
+                   positions and directions)
+                - ALLEY-OOP may occur.  Computer will take total control of
+                  offensive team.  Player with ball will toss a pass toward
+                  the hoop and the player who was driving toward the hoop
+                  will elevate, catch ball and slam it home.  Computer
+                  decides if the jam is successful.  (Pretty high!)
+
+When PASS is caught:
+        - When Pass is caught and stick of receiving player is not pushed:
+                - Player holds onto the ball.  Possibly going through some
+                  kind of a 'look for my teammate' type list for the torso.
+                  Don't start dribbling right away because we want to allow
+                  the player to use the FAKE button.
+        - When player pushes stick:
+                - Start dribbling.  Run in selected direction.
+
+TURBO/FAKE Button:
+- I assume this button will be used sparingly, and never whacked upon
+  repeatedly in quick succession.
+- Each player will have a TURBO button meter displayed in his status box.
+
+        - If running:
+                - Speed up player you are controlling.
+        - If standing and holding onto ball:
+                - Fake a shot or hot dog in the face of defender.  Once
+                  defender bites on the fake, the player can push stick,
+                  which causes him to run around the defender.
+
+
+Layout for Controls on Defense:
+
+* STICK    * STEAL  * BLOCK/REBOUND
+               * TURBO
+
+
+BLOCK/REBOUND Button:
+        - If ball has reached rim, or is bounding off the rim, then:
+                - Player you control (not drone) will face the hoop and squat
+                  down (box out type look) and maybe leap up for the ball,
+                  or push away opposing player.
+                        - If ball is generally above his head, then player
+                          will jump up and attempt to rebound the ball.  He
+                          will even grab the ball and bring it down.
+
+        - If ball has not reached the rim, then we assume a block attempt:
+                - Elevate player you are controlling in the direction he
+                  is facing.  If ball is nearby, computer will automatically
+                  swat the ball away.  Otherwise, player arm is extended high
+                  for a block.
+
+STEAL Button:
+- I assume this button will be whacked upon repeatedly when defending the
+  opponent face to face.
+        - Player being controlled will swipe at the ball.
+                - If successful, opponent will fall down and you will be
+                  in control of the ball with a dribble.
+
+TURBO Button:
+        - Causes player you are controlling to speed up his motion.
+                - Will not affect jumping, reaching in for a steal, etc.
+
+STEAL & TURBO Button at same time:
+        - May cause player you are controlling to execute special defensive
+          move.  Computer will select the appropriate move:
+                - Drop down and undercut offensive player as he is gliding
+                  toward hoop.
+                - Punch player in the face and steal ball.
+                - Push player away from hoop.
+                - (INSERT MORE HERE)
+
+
+******************************************************************************
+
+ANIMATIONS NEEDED
+
+DIRECTIONS of movement for artwork (Flip to get 6,7,8)
+
+1
+        2
+                3
+        4
+5
+
+MOVEMENT for the HEAD
+
+Each players head will be needed in all 5 directions.  The head will be
+pasted onto the torso and will animate independently of all other animations.
+When appropriate, the head will turn and look, etc.
+
+MOVEMENT for LEGS only
+
+Standing in directions 2,3,4. (2 types)
+        - Straight up type stand.
+        - Lower to the ground, butt stuck out, ready to drive.
+          Probably used in conjunction with torso fakes or when the
+          torso is dribbling low to the ground.
+
+Jumping straight up in 1,2,3,4,5.
+        - Standard jump shot look. (Toes pointing down type)
+
+Running in 1.5,2,3,4 & 4.5
+        - Directions 1 and 5 could possibly use 2 and 4.
+
+Spinning run with ball in 2,4.
+        - Spin around defender and keep dribbling.  Could happen in the
+          back court or in the lane.
+
+Gliding toward hoop for a dunk in 2,3,4.
+        - Probably 2 or 3 looks, and 1 signature look.
+                - Legs separated, knee forward like Jordan.
+                - Legs together like a jump shot. (torso would have
+                  arm extended).
+                - Spinning 360 degree slam.
+                - Two handed slam and hang/swing from hoop.
+                - (INSERT MORE HERE)
+
+Hook shot in 2,4.
+        - One leg bent the other leg straight.  Torso will twist toward hoop.
+
+Knocked to ground in 2 and 4.
+        - Probably 2 looks:
+                - Face first toward ground
+                - Butt first toward ground
+
+Defensive posture in 1,2,3,4,5.
+        - Legs spread apart, back to the hoop.
+        - Shuffle side to side with back always facing the hoop.
+
+Prepare for rebound legs in 2,3,4.
+        - When ball goes up, the players can crouch down and prepare to
+          jump for the rebound.
+
+
+******************************************************************************
+
+
+MOVEMENT for TORSO only
+
+SHOTS:
+
+Jumping straight up in 1,2,3,4,5.
+        - Standard jump shot look.
+                - Arms up over head, shoot ball sequence.
+
+Gliding toward hoop for a dunk in 1,2,3,4.
+        - Probably 2 or 3 looks, and 1 signature look.
+                - One arm extended toward hoop like Jordan.
+                - Both arms gripping ball as player flys to hoop.
+                - Spinning 360 degree slam.
+                - 2 handed ball behind head monster dunk.
+                - (Include others here)
+
+Hook shot in 2,4.
+        - Outside arm hooks the ball toward hoop.
+
+Gliding in for a finger roll in 3.
+        - Arm extended out with ball resting on finger tips.  Gently launch
+          ball up into hoop.
+
+Desperation half court shot in 3.
+        - Chest type launch.  Computer will do this if beyond half court.
+
+
+NON-SHOOTING:
+
+Fake out move in 1,2,3,4,5.
+        - Triggered by the fake out button (See above)
+                - Jordan type palm of ball with arm sweep.
+                - Two handed ball/head fake.
+                - Ball held low, body/head shifts back and forth.
+
+Running in 1,2,3,4,5.
+        - Not as many animations on torso as on legs.
+        - Dribbling ball sequence.
+
+Spinning run with ball in 2,4.
+        - Spin around defender and keep dribbling.  Could happen in the
+          back court are or in the lane.
+
+Standing in directions 1,2,3,4,5.
+        - Straight up type stand.
+        - Straight up type stand while dribbling.
+        - Signature dribble between legs while standing and not moving.
+
+Knocked to ground in 2 and 4.
+        - Probably 2 looks:
+                - Face first toward ground
+                - Butt first toward ground
+
+Defensive posture in 1,2,3,4,5.
+        - Arms up and apart, back to the hoop.
+
+Prepare for rebound - torso in 2,3,4.
+        - When ball goes up, the players can crouch down and prepare to
+          jump for the rebound.
+
+Calling for a pass in 2,3,4
+        - Arm held out high away from body
+                - Can be used when legs are running
+
+Set Pick in 2 and 4.
+        - Player stands and keeps arms in front of his body like a block.
+
+Swipe at ball in 1,2,3,4,5.
+        - Player reaches outward for a steal
+
+Chest pass in 1,2,3,4,5.
+        - Push ball away from chest with both hands.  Ball speeds toward
+          teammate.
+                - Also use for bounce pass
+                - Push ball away from chest with both hands.  Ball bounces
+                  halfway between passer and teammate.
+
+Overhead pass in 1,2,3,4,5.
+        - Ball is held above head with both hands.
+                - Can be a bullet type pass
+                - Or a lob type pass to a closer teammate.
+
+One handed speed pass in 3.
+        - One handed horizontal pass from top of key area to under hoop.
+          Kind of a push pass.  Computer will decide to use this pass.
+
+Dish off while taking a gliding toward hoop in 2,3,4.
+        - One handed launch of ball if teammate is located off to the side.
+          Computer can allow this move.
+
+NOTE:   While in the middle of a JUMP SHOT, pass off artwork will be the
+        standard overhead two handed pass.
+
+
+******************************************************************************
+

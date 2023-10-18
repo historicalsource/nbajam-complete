@@ -1,0 +1,39 @@
+New additions to NBA JAM manual for new KIT software - 3/24/93
+Mark Turmell - Ext. 485
+
+
+Changes to existing manual:
+
+
+1. More dipswitch options:  (All dipswitches default to OFF)
+
+	- UJ2 switch #1:  2 player or 4 player KIT (More below)
+
+	- UJ2 switch #3:  Show video clips at halftime or skip clips.
+			  (We included this because there may be a reset
+			  problem in the game during the dislay of the
+			  video clips)
+
+	- UJ2 switch #7:  Powerup test on/off - We have included this
+			  option at the request of Lenc Smith to speed up
+			  the board test on the assembly line.
+
+2. New adjustment:
+
+	- Computer Assistance:  The computer tries to keep games close.
+	  We have determined that this causes more excitement and as a
+	  result, higher earnings.  However, if the operator cares to,
+	  he can disable computer assistance.  This may be desireable for
+	  tournaments, etc.			  
+		
+
+Kit Instructions:
+
+The KIT software allows the operator to select 2 or 4 players!  This is
+of major interest to operators.  We should communicate this fact very
+clearly.  Maybe we can even paste a big notice to the cover of the manual.
+
+The operator must first decide if he is going to stick this KIT into a 
+2 player cabinet or a 4 player cabinet.  The software will configure itself
+based upon dipswitch UJ2 switch #1.
+

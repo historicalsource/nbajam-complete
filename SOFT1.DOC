@@ -1,0 +1,105 @@
+Fix diagnostics, new switch test, correct joysticks/buttons for menu stuff.
+
+Software Schedule for NBA Jam - 8/19/92
+
+Estimated time for programing - No specific order.
+
+
+ - Diagnostics update/pricing modes for basketball
+   - Take lots of stuff out, add credit time info, add appropriate
+     audits into game code and display in the diagnostics.
+   - Possibly operator adjustable attract mode messages, rival teams
+     displayed, etc.
+   - 5 days
+
+
+ - Title page/attract mode package
+   - Show gameplay, live action windows, best players (Top Ten),
+     cutaway action, Jordan title page, NBA logo and other propaganda.
+   - Possibly show advertisements.
+   - 5 days
+
+
+ - Cutaway for dunks/jump shots
+   - Show background, animated crowd, camera flashes, position all players
+     to correct position.
+   - Have player with ball perform chosen activity, finish and then transition
+     back to original court.  Reposition players accordingly.
+   - Possibly allow the defender to perform defensive block.
+   - 5 days for first cutaway - 3 days for any additional cutaways we do.
+
+
+ - Showing any live action window on demand
+   - Storing data in program ROM or IMG ROM
+   - 4 days
+
+
+ - Team selection screen
+   - Split screen in half, allow 1 player from each team to select team.
+   - Show logos, city names, players controlled.
+   - Zoom up mugshots of slected players
+   - Once selected, show live action scene of those teams if possible.
+   - 7 days
+
+
+ - First person zoom into hoop for a dunk
+   - Screen bounces up and down, camera elevates, hand comes in and dunks
+   - 10 days
+
+
+ - Paste heads onto players
+   - 3rd animation point has to be supported
+   - Correct head has to be placed onto player and scaled independently
+   - 14 days
+
+
+ - Allow players to be stretched, fattened, etc.
+   - Each player needs to have attributes set
+   - Code must support this
+   - 5 days
+
+
+ - LOADIMG mod or other solution for breaking up the court line by line
+   - Load binary file into .LOD file
+   - 2 days
+
+
+ - Put in animated crowd/players, camera flashes
+   - 2 days
+
+
+ - Hoop/Backboard physics
+   - Tweaks mostly
+   - 2 days
+
+ 
+ - Drone logic
+   - Design on paper first
+   - Will require tons of tweaking, but main coding of logic will require:
+   - 7 days
+
+
+ - Placement of sounds/music/play by play calling
+   - Lots of tweaks till the end
+   - 5 days
+
+
+ - Halftime show/Between quarters info
+   - Must be designed
+   - Art must also be scheduled
+   - Est. 5 days
+
+
+ - Place advertisements onto table
+   - It takes the same amount of time if we have 1 ad or 10 ads!
+   - 1 day
+
+
+ - Putting player art/palettes into game & tweaking
+   - Collisions, game feel
+   - Fall downs, punch, rebounds etc.
+   - Tweaks will go until the last day
+   - 90 days
+
+
+

@@ -1,0 +1,182 @@
+Overall list of artwork needed - 8/6/92
+
+In priority order:
+
+
+1-
+
+Finish grabbing Willie images.  Incorporate them into Willie4.  John C. is
+ responsible and has a list of what needs to be grabbed.  (Less than 20 imgs)
+ 1 day
+ 
+
+2-
+
+Fix color on some of the images which are too bright or too dark for all
+ Willie files.  Some images need to be rescaled also.  John C. is responsible
+ for this and has a list of messed up images from all the Willie files.
+ 3 days
+
+
+3-
+
+Major touch up on all the shoes, hands, heads, trunks, fringing, and any
+ flesh inside uniform.  Tony and John C. are responsible for Willie images.
+ Double check the stationary imgs and #3 runs - they are most critical.
+ 10 days
+
+
+4-
+
+Finish grabbing all the Todd images.  John N. has a list of sequences needed
+ and is responsible for all Todd grabs.  John N. is responsible for setting
+ all the animation points and correctly naming each image.  John N. has all
+ the Willie files so he can look at names & animation points.
+ 15 days
+
+
+5-
+
+Touch up John Newcomer's Todd images - nobody has seen the art but I assume
+ some additional work will be required.  Touch up is expected to be
+ similar to Willie touch up.
+ 5 days
+
+
+****************************************************************************
+									   
+All of the Willie & Todd images must be completed before we move on!
+These will be the first images to be locked to for ROM masking.
+
+****************************************************************************
+
+
+6-
+
+New animated hoop/backboard/net.  Rim must bend down, net must swish,
+ backboard must tilt correctly.  We must attain a video tape for reference.
+ Tony to do.
+ 2 days
+
+
+7-
+
+Team logos for selection screen.  Hopefully we can get some good source
+ material for help in digitizing.  All 27 teams needed?  John N. is 
+ responsible for grabbing and touching up.
+ 5 days
+
+
+8-
+
+New Midway text for the flipped end of the court.  Text reads NBA JAM.
+ John C. will draw it and touch it up.
+ 1 day
+
+
+9-
+
+Player heads/trading card like look.  Used for selection screen stuff.
+ John N. responsible for grabbing and touching up.  Tony could help if he
+ has the time.
+ 3 days
+
+
+10-
+
+NBA logo on lower right court, and upper left near scorer's table.  Tony to
+ do.  Need to isolate these red/white/blue colors from the rest of the court
+ pal!  Because the court colors will change, but not the logo.
+ 1 day
+
+
+11-
+	
+	Pals moved down
+
+
+12-
+
+Put legs on blue guy torso in table2 img of file COURT.IMG.  Put us in crowd!
+ Change the crowd to solve flip look and then animate the parts of the crowd
+ with 5 or 6 animating sequences, some of which could be copied around into
+ other areas.  Make bench players bigger and animate them, towels & stuff.
+ Tony to do.
+ 5 days
+
+
+13-
+
+Get a few pals for court - Tony will have to modify the blending colors into
+ the crowd!  Even tint the floor boards for variety.
+ 1 day
+
+
+14-
+
+All the team names printed out as one big image.  Like we already have Chicago
+ and Detroit.  All 27 teams needed.  John N. to piece together and touch up.
+ 1 day
+
+
+15-
+
+
+Possible advertisements on scorer's table.  This includes the reflection
+ down onto the court.  We need a few ads.  Tony and John C. to do.
+ 2 days
+
+
+16-
+
+Put correct crowd behind cutawy #1 court.  Break up the pieces efficiently and
+ place them into existing pals.  John C. and Tony to do.
+ 5 days
+
+
+17-
+
+A cutaway look from angle out past 3-point line for showing jumpers.  Tony
+ needs to sketch this out on paper.  Paste our players onto a mockup to make
+ sure they work.
+ 5 days
+
+
+18-
+
+Four pals for each NBA team, two for Willie and two for Todd  (Ex. Normal
+ Willie in green and dark Willie in green)  John C. and Tony to do.  Mark will
+ reorganize the pal for easier range adjustment.
+ 5 days
+
+
+18.5-
+
+Title page - How about: Full screen NBA logo with full screen head shot of
+ Jordan & other player heads crammed around the screen?  We want to show off
+ our cool 256 color digitized heads!  Sixteen pals of 256 on screen at
+ once!  People should look at this and say wow, graphics have come a long way.
+ Maybe they'll even imagine that the on screen players are the real dudes!
+ Other ideas?  John C. & Tony are responsible.
+ 4 days
+
+
+19-
+
+Video clips for playback.  We can do different sizes and can combine multiple
+ players in one clip.  We should have more/larger Jordan clips than others!
+ John C. and John N. to do.
+ 4 days.
+
+
+20-
+
+Environmental logo/Malcolm X logo for attract mode.  John C. to do.
+ 1 day
+
+
+21-
+
+Camera flashes in crowd - To be done in software
+ 1000 days
+

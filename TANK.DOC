@@ -1,0 +1,65 @@
+
+To:	 Management, Marketing & Sales Departments
+
+From:	 Mark Turmell
+Re:	 Tank Game Information:
+
+
+I found out on Friday that some of you may believe that I knowingly allowed
+the tank game to be played in the attract mode.  This is completely false.
+A software bug is what caused the problem.
+
+The tank game was something that was being programmed on at the start of
+the NBA JAM project.  The NBA JAM code grew out of that game.  The tank
+game was always in NBA JAM, but it was disabled.  It was reenabled shortly
+before we released the game.
+
+All of the game powerups are triggered at one specific moment, which is just
+as the court and players are first displayed.  It is here that the tank
+powerup is also checked.  Unfortunately, when the attract mode displays game
+action, the very same start up code is executed.  This was the bug.
+
+I was not aware that the tank game could be called up during that moment
+of the attract mode.  When we stumbled upon it ourseleves, about three weeks
+after the game had shipped, we were shocked and the bug was immediately
+fixed.  I should have stopped everthing at this point and discussed the bug.
+
+It was at this time that we were attempting to release rev 3.0 software
+which fixed the bug.  Unfortunately, we then had a delay in tracking down
+exactly why some 2.0 games were resetting and some were not.  Of course,
+this allowed more 2.0 games to ship, which worsened the problem.
+
+I feel horrible about the bug and the resulting furor, but learning that
+some of you may think this was no accident made me feel worse.  I may have
+allowed this bug to get past, but I'm not stupid enough to purposely allow
+kids to play for free.  In fact, in a related area, NBA JAM software allows
+people to advance through the attract mode by tapping on a button.  I
+discussed the pluses and minuses of this feature with several people in the
+company before I elected to include it.  I was concerned that even this
+limited amount of interaction would be detrimental to the game.
+
+For the last month or so, I have been receiving approximately four phone
+calls/messages a day from kids who are playing NBA JAM and are looking for
+secret powerups.  I occassionally take the time to chat with these callers.
+Sometimes I verify and/or tell someone how to do one of the games.  The
+secret powerups have definitely spurred additional interest in the game.
+
+I have never and would never tell someone how to get into the tank game from
+the attract mode.  One of the individuals I spoke with created a strategy
+guide for playing NBA JAM which included play tips and secret powerups.  The
+document was posted on Nerd Net.  At the end of the document he thanked me
+for answering some of his questions.
+
+I stand by the concept of including secret features in our games, as I'm sure
+you all do, but I now understand and agree that management should be made
+aware of all such features.
+
+Once again, I apologize for this bug.  I hope this doesn't become a bigger
+issue than it already is, and I don't think it will.  It would be a shame if
+this forever tarnishes the success of NBA JAM.
+
+
+
+Mark Turmell
+
+
